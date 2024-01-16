@@ -24,10 +24,12 @@ body {
 body {
 
   background: rgb(231, 221, 211);
-
+  background-image: url("https://www.tilingtextures.com/wp-content/uploads/2018/11/0068-1-768x768.jpg");
+  background-size: 250px 250px;
   overflow-x: hidden;
 
 }
+
 body::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -38,4 +40,25 @@ body::-webkit-scrollbar-thumb {
   background: black;
   border-top: solid 10px tomato;
   border-bottom: solid 10px tomato;
+}
+
+.App {
+  height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.webBody {
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://www.tilingtextures.com/wp-content/uploads/2018/11/0068-1-768x768.jpg");
+  background-size: 250px 250px;
+
 }

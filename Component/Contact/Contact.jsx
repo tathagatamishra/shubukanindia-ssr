@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { IonIcon } from "@ionic/react";
 import {
   logoFacebook,
@@ -13,6 +12,7 @@ import {
 import "./Contact.scss";
 
 import ReactGA from 'react-ga';
+import Link from "next/link";
 
 export default function Contact() {
 
@@ -42,14 +42,14 @@ export default function Contact() {
       <section className="content">
         <div className="link">
           <IonIcon icon={logoWhatsapp} className="label" />
-          <NavLink
-            to={`https://wa.me/${+919851852499}`}
+          <Link
+            href={`https://wa.me/${+919851852499}`}
             className="opt"
             target="_blank"
             rel="phone number"
           >
             +91 9851852499
-          </NavLink>
+          </Link>
         </div>
 
         <div className="link">
@@ -66,49 +66,49 @@ export default function Contact() {
 
         <div className="link">
           <IonIcon icon={logoFacebook} className="label" />
-          <NavLink
-            to="https://www.facebook.com/ShorinRyuShubukanIndia"
+          <Link
+            href="https://www.facebook.com/ShorinRyuShubukanIndia"
             className="opt"
             target="_blank"
             rel="facebook link"
           >
             ShorinRyu Shubukan India
-          </NavLink>
+          </Link>
         </div>
 
         <div className="link">
           <IonIcon icon={logoFacebook} className="label" />
-          <NavLink
-            to="https://www.facebook.com/shubukanindia"
+          <Link
+            href="https://www.facebook.com/shubukanindia"
             className="opt"
             target="_blank"
             rel="facebook link"
           >
             Shubukan India
-          </NavLink>
+          </Link>
         </div>
 
         <div className="link">
           <IonIcon icon={logoInstagram} className="label" />
-          <NavLink
-            to="https://www.instagram.com/shubukanindia/"
+          <Link
+            href="https://www.instagram.com/shubukanindia/"
             className="opt"
             target="_blank"
             rel="instagram link"
           >
             Shubukan India
-          </NavLink>
+          </Link>
         </div>
 
         <div className="link">
             <IonIcon icon={logoWordpress} className="label" />
-            <NavLink
-              to="https://kenshinsabya.wordpress.com/"
+            <Link
+              href="https://kenshinsabya.wordpress.com/"
               className="opt"
               target="_blank"
             >
               kenshinsabya
-            </NavLink>
+            </Link>
           </div>
       </section>
     </div>

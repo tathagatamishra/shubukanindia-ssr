@@ -118,6 +118,7 @@ import thumb_54 from "../../thumbnail/group (12).jpeg";
 import thumb_55 from "../../thumbnail/cafe.jpeg";
 
 import ReactGA from 'react-ga';
+import Image from "next/image";
 
 export default function Gallery({ setShowNav }) {
 
@@ -307,7 +308,7 @@ export default function Gallery({ setShowNav }) {
                 setPhotoIndex(index);
               }}
             >
-              <LazyLoadImage
+              <Image
                 className="img"
                 alt={`Image ${index + 1}`}
                 effect="blur"

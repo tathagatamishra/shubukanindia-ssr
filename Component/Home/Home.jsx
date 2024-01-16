@@ -44,12 +44,15 @@ export default function Home({ setShowNav }) {
   const [popImg, setPopImg] = useState("");
   const [imgClicked, setImgClicked] = useState(false);
 
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' && window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(
+    0
+  );
 
   useEffect(() => {
-    typeof window !== 'undefined' && window.scrollTo({
-      top: 0,
-    });
+    
+      window.scrollTo({
+        top: 0,
+      });
   }, []);
 
   useEffect(() => {
@@ -125,26 +128,22 @@ export default function Home({ setShowNav }) {
   return (
     <div className="Home">
       <div className="tree">
-        <Image src={treeImg} alt="" />
+        <Image src={treeImg} />
       </div>
       <div className="line">
         <div className="lineColor"></div>
-        {/* <Image src="bushido.png" alt="" /> */}
+        {/* <Image src="bushido.png"  /> */}
       </div>
 
       <section className="hero">
         <h1>Shubukan Uema Dojo India</h1>
         <p>
-          {/* <i>&nbsp;</i> Beneath the instinct to fight
-        </p>
-        <p> */}
           Pure soul is the preserver of true karate<i>&nbsp;</i>
         </p>
         <div className="bird">
-          <Image src={birdImg} alt="" />
+          <Image src={birdImg}  />
         </div>
       </section>
-      {console.log(windowWidth)}
 
       <section className="intro">
         {windowWidth <= 400 ? (
@@ -172,7 +171,7 @@ export default function Home({ setShowNav }) {
         )}
 
         <div className="drogon">
-          <Image src={drogon} alt="" />
+          <Image src={drogon}  />
         </div>
 
         <div className="description">
@@ -196,7 +195,7 @@ export default function Home({ setShowNav }) {
         </div>
 
         <div className="drogon2">
-          <Image src={drogon2} alt="" />
+          <Image src={drogon2}  />
         </div>
       </section>
 
@@ -204,7 +203,7 @@ export default function Home({ setShowNav }) {
         <div className="popUp">
           <div className="popBack" onClick={imgPop}></div>
           <div className="imgPop" onClick={imgPop}>
-            <Image src={popImg} alt="image" />
+            <Image src={popImg} />
           </div>
         </div>
       )}
@@ -267,10 +266,10 @@ export default function Home({ setShowNav }) {
               <p className="sensei">7th Dan Okinawa Shorin-Ryu</p>
             </div>
 
-            <Image src={quot1} alt="" />
+            <Image src={quot1}  />
           </div>
           <div className="box2">
-            <Image src={quot2} alt="" />
+            <Image src={quot2} />
 
             <div className="quote">
               <p>
@@ -298,8 +297,8 @@ export default function Home({ setShowNav }) {
         </div>
 
         <div className="img-div">
-          <Image src={sg1} alt="" />
-          <Image src={sg2} alt="" />
+          <Image src={sg1}  />
+          <Image src={sg2}  />
         </div>
 
         <p className="story1">

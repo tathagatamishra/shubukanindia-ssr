@@ -40,7 +40,7 @@ export default function History({ setShowNav }) {
         <h1>History</h1>
         {/* <p>Discovering the Way of Words</p> */}
         <div className="hero-content">
-          <LazyLoadImage
+          <Image
             className="hero-img"
             alt="Shureimon gate"
             effect="blur"
@@ -49,7 +49,7 @@ export default function History({ setShowNav }) {
             }}
             src={thumb1}
             onClick={() => {
-              setShowNav(false);
+              // setShowNav(false);
               setIsOpen(true);
               setImage(img1);
               setComment("Image taken by Sensei Sabyasachi Giri");
@@ -80,7 +80,7 @@ export default function History({ setShowNav }) {
           <Image
             src={img3}
             onClick={() => {
-              setShowNav(false);
+              // setShowNav(false);
               setIsOpen(true);
               setImage(img3);
               setComment("Image taken from okinawankarate.org");
@@ -94,7 +94,7 @@ export default function History({ setShowNav }) {
           <Image
             src={img4}
             onClick={() => {
-              setShowNav(false);
+              // setShowNav(false);
               setIsOpen(true);
               setImage(img4);
               setComment("Image taken from okinawankarate.org");
@@ -123,7 +123,7 @@ export default function History({ setShowNav }) {
           className="bottom-img"
           src={img2}
           onClick={() => {
-            setShowNav(false);
+            // setShowNav(false);
             setIsOpen(true);
             setImage(img2);
             setComment("Image taken from wikipedia.org");
@@ -154,7 +154,7 @@ export default function History({ setShowNav }) {
         <p className="comment">Digital reconstruction of Shurijo Castle</p>
       </section>
 
-      <ImagePop
+      <ImgPop
         setShowNav={setShowNav}
         setIsOpen={setIsOpen}
         isOpen={isOpen}

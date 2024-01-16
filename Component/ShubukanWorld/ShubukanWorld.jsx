@@ -17,6 +17,7 @@ import img_9 from "../../world_images/img (4).jpeg";
 import img_10 from "../../images/group (5).jpeg";
 
 import ReactGA from 'react-ga';
+import Image from "next/image";
 
 export default function ShubukanWorld({ setShowNav }) {
   

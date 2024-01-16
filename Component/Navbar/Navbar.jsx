@@ -90,7 +90,7 @@ export default function Navbar() {
             {/* menu is forced to be hidden but it's css is not be hidden, so when it appears, it appears with transition, but when it get killed, it killed immediately, so there is no end transition */}
             <div
               className="menuBox"
-              style={{ backgroundImage: `url(${oldPaper})` }}
+              style={{ backgroundImage: `url(${oldPaper.src})` }}
             >
               {/* <Image src="oldpaper.png" alt="" /> */}
               <nav className="nav">
