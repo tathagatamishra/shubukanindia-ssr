@@ -6,32 +6,32 @@ import { IonIcon } from "@ionic/react";
 import { logoWordpress, searchOutline } from "ionicons/icons";
 
 export default function Blog() {
-  const [position, setPosition] = useState({
-    height: "4rem",
-    top: "6rem",
-    zIndex: "15",
-  });
-  const [searchPos, setSearchPos] = useState({ marginBottom: "0" });
-  const [lastScrollTop, setLastScrollTop] = useState(Infinity);
+  // const [position, setPosition] = useState({
+  //   height: "4rem",
+  //   top: "6rem",
+  //   zIndex: "15",
+  // });
+  // const [searchPos, setSearchPos] = useState({ marginBottom: "0" });
+  // const [lastScrollTop, setLastScrollTop] = useState(Infinity);
 
-  window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  // typeof window !== "undefined" && window.addEventListener("scroll", function () {
+  //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-      setPosition({
-        height: "8rem",
-        top: "0",
-        zIndex: "5",
-        boxShadow: "inset 0px 230px 30px -150px rgb(236, 231, 226)",
-      });
-      setSearchPos({ marginBottom: "4rem" });
-    } else {
-      setPosition({ height: "4rem", top: "6rem", zIndex: "15" });
-      setSearchPos({ marginBottom: "0" });
-    }
+  //   if (scrollTop > lastScrollTop) {
+  //     setPosition({
+  //       height: "8rem",
+  //       top: "0",
+  //       zIndex: "5",
+  //       boxShadow: "inset 0px 230px 30px -150px rgb(236, 231, 226)",
+  //     });
+  //     setSearchPos({ marginBottom: "4rem" });
+  //   } else {
+  //     setPosition({ height: "4rem", top: "6rem", zIndex: "15" });
+  //     setSearchPos({ marginBottom: "0" });
+  //   }
 
-    setLastScrollTop(scrollTop);
-  });
+  //   setLastScrollTop(scrollTop);
+  // });
 
   useEffect(() => {
     window.scrollTo({
